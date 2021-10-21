@@ -1,692 +1,98 @@
-  {
-    "id": 1,
-    "type": "vertex",
-    "label": "document",
-    "languageId": "vhdl",
-    "uri": "file:///c:/Users/Manuelito/AppData/Local/Temp/tutorial/chiquito.vhd"
-  },
-  {
-    "id": 10,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 3,
-      "startCharacter": 7,
-      "endLine": 3,
-      "endCharacter": 18
-    }
-  },
-  {
-    "id": 11,
-    "type": "edge",
-    "label": "next",
-    "outV": 10,
-    "inV": 2
-  },
-  {
-    "id": 12,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 11,
-      "startCharacter": 4,
-      "endLine": 11,
-      "endCharacter": 15
-    }
-  },
-  {
-    "id": 13,
-    "type": "edge",
-    "label": "next",
-    "outV": 12,
-    "inV": 2
-  },
-  {
-    "id": 14,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 13,
-      "startCharacter": 20,
-      "endLine": 13,
-      "endCharacter": 31
-    }
-  },
-  {
-    "id": 15,
-    "type": "edge",
-    "label": "next",
-    "outV": 14,
-    "inV": 2
-  },
-  {
-    "id": 2,
-    "type": "vertex",
-    "label": "resultSet"
-  },
-  {
-    "id": 3,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 3,
-      "startCharacter": 7,
-      "endLine": 3,
-      "endCharacter": 18
-    }
-  },
-  {
-    "id": 4,
-    "type": "edge",
-    "label": "next",
-    "outV": 3,
-    "inV": 2
-  },
-  {
-    "id": 5,
-    "type": "vertex",
-    "label": "definitionResult"
-  },
-  {
-    "id": 6,
-    "type": "edge",
-    "label": "textDocument/definition",
-    "outV": 2,
-    "inV": 5
-  },
-  {
-    "id": 7,
-    "type": "edge",
-    "label": "item",
-    "outV": 5,
-    "inV": [
-      3
-    ],
-    "property": "definitions"
-  },
-  {
-    "id": 8,
-    "type": "vertex",
-    "label": "referenceResult"
-  },
-  {
-    "id": 16,
-    "type": "edge",
-    "label": "item",
-    "outV": 8,
-    "inV": [
-      10,
-      12,
-      14
-    ],
-    "property": "references"
-  },
-  {
-    "id": 9,
-    "type": "edge",
-    "label": "textDocument/definition",
-    "outV": 2,
-    "inV": 8
-  },
-  {
-    "id": 25,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 10,
-      "startCharacter": 9,
-      "endLine": 10,
-      "endCharacter": 18
-    }
-  },
-  {
-    "id": 26,
-    "type": "edge",
-    "label": "next",
-    "outV": 25,
-    "inV": 17
-  },
-  {
-    "id": 27,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 32,
-      "startCharacter": 11,
-      "endLine": 32,
-      "endCharacter": 20
-    }
-  },
-  {
-    "id": 28,
-    "type": "edge",
-    "label": "next",
-    "outV": 27,
-    "inV": 17
-  },
-  {
-    "id": 29,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 34,
-      "startCharacter": 24,
-      "endLine": 34,
-      "endCharacter": 33
-    }
-  },
-  {
-    "id": 30,
-    "type": "edge",
-    "label": "next",
-    "outV": 29,
-    "inV": 17
-  },
-  {
-    "id": 17,
-    "type": "vertex",
-    "label": "resultSet"
-  },
-  {
-    "id": 18,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 10,
-      "startCharacter": 9,
-      "endLine": 10,
-      "endCharacter": 18
-    }
-  },
-  {
-    "id": 19,
-    "type": "edge",
-    "label": "next",
-    "outV": 18,
-    "inV": 17
-  },
-  {
-    "id": 20,
-    "type": "vertex",
-    "label": "definitionResult"
-  },
-  {
-    "id": 21,
-    "type": "edge",
-    "label": "textDocument/definition",
-    "outV": 17,
-    "inV": 20
-  },
-  {
-    "id": 22,
-    "type": "edge",
-    "label": "item",
-    "outV": 20,
-    "inV": [
-      18
-    ],
-    "property": "definitions"
-  },
-  {
-    "id": 23,
-    "type": "vertex",
-    "label": "referenceResult"
-  },
-  {
-    "id": 31,
-    "type": "edge",
-    "label": "item",
-    "outV": 23,
-    "inV": [
-      25,
-      27,
-      29
-    ],
-    "property": "references"
-  },
-  {
-    "id": 24,
-    "type": "edge",
-    "label": "textDocument/definition",
-    "outV": 17,
-    "inV": 23
-  },
-  {
-    "id": 40,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 13,
-      "startCharacter": 13,
-      "endLine": 13,
-      "endCharacter": 16
-    }
-  },
-  {
-    "id": 41,
-    "type": "edge",
-    "label": "next",
-    "outV": 40,
-    "inV": 32
-  },
-  {
-    "id": 42,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 44,
-      "startCharacter": 4,
-      "endLine": 44,
-      "endCharacter": 7
-    }
-  },
-  {
-    "id": 43,
-    "type": "edge",
-    "label": "next",
-    "outV": 42,
-    "inV": 32
-  },
-  {
-    "id": 32,
-    "type": "vertex",
-    "label": "resultSet"
-  },
-  {
-    "id": 33,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 13,
-      "startCharacter": 13,
-      "endLine": 13,
-      "endCharacter": 16
-    }
-  },
-  {
-    "id": 34,
-    "type": "edge",
-    "label": "next",
-    "outV": 33,
-    "inV": 32
-  },
-  {
-    "id": 35,
-    "type": "vertex",
-    "label": "definitionResult"
-  },
-  {
-    "id": 36,
-    "type": "edge",
-    "label": "textDocument/definition",
-    "outV": 32,
-    "inV": 35
-  },
-  {
-    "id": 37,
-    "type": "edge",
-    "label": "item",
-    "outV": 35,
-    "inV": [
-      33
-    ],
-    "property": "definitions"
-  },
-  {
-    "id": 38,
-    "type": "vertex",
-    "label": "referenceResult"
-  },
-  {
-    "id": 44,
-    "type": "edge",
-    "label": "item",
-    "outV": 38,
-    "inV": [
-      40,
-      42
-    ],
-    "property": "references"
-  },
-  {
-    "id": 39,
-    "type": "edge",
-    "label": "textDocument/definition",
-    "outV": 32,
-    "inV": 38
-  },
-  {
-    "id": 53,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 15,
-      "startCharacter": 11,
-      "endLine": 15,
-      "endCharacter": 18
-    }
-  },
-  {
-    "id": 54,
-    "type": "edge",
-    "label": "next",
-    "outV": 53,
-    "inV": 45
-  },
-  {
-    "id": 55,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 23,
-      "startCharacter": 8,
-      "endLine": 23,
-      "endCharacter": 15
-    }
-  },
-  {
-    "id": 56,
-    "type": "edge",
-    "label": "next",
-    "outV": 55,
-    "inV": 45
-  },
-  {
-    "id": 57,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 23,
-      "startCharacter": 21,
-      "endLine": 23,
-      "endCharacter": 28
-    }
-  },
-  {
-    "id": 58,
-    "type": "edge",
-    "label": "next",
-    "outV": 57,
-    "inV": 45
-  },
-  {
-    "id": 59,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 34,
-      "startCharacter": 14,
-      "endLine": 34,
-      "endCharacter": 21
-    }
-  },
-  {
-    "id": 60,
-    "type": "edge",
-    "label": "next",
-    "outV": 59,
-    "inV": 45
-  },
-  {
-    "id": 61,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 40,
-      "startCharacter": 16,
-      "endLine": 40,
-      "endCharacter": 23
-    }
-  },
-  {
-    "id": 62,
-    "type": "edge",
-    "label": "next",
-    "outV": 61,
-    "inV": 45
-  },
-  {
-    "id": 45,
-    "type": "vertex",
-    "label": "resultSet"
-  },
-  {
-    "id": 46,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 15,
-      "startCharacter": 11,
-      "endLine": 15,
-      "endCharacter": 18
-    }
-  },
-  {
-    "id": 47,
-    "type": "edge",
-    "label": "next",
-    "outV": 46,
-    "inV": 45
-  },
-  {
-    "id": 48,
-    "type": "vertex",
-    "label": "definitionResult"
-  },
-  {
-    "id": 49,
-    "type": "edge",
-    "label": "textDocument/definition",
-    "outV": 45,
-    "inV": 48
-  },
-  {
-    "id": 50,
-    "type": "edge",
-    "label": "item",
-    "outV": 48,
-    "inV": [
-      46
-    ],
-    "property": "definitions"
-  },
-  {
-    "id": 51,
-    "type": "vertex",
-    "label": "referenceResult"
-  },
-  {
-    "id": 63,
-    "type": "edge",
-    "label": "item",
-    "outV": 51,
-    "inV": [
-      53,
-      55,
-      57,
-      59,
-      61
-    ],
-    "property": "references"
-  },
-  {
-    "id": 52,
-    "type": "edge",
-    "label": "textDocument/definition",
-    "outV": 45,
-    "inV": 51
-  },
-  {
-    "id": 72,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 16,
-      "startCharacter": 11,
-      "endLine": 16,
-      "endCharacter": 20
-    }
-  },
-  {
-    "id": 73,
-    "type": "edge",
-    "label": "next",
-    "outV": 72,
-    "inV": 64
-  },
-  {
-    "id": 74,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 24,
-      "startCharacter": 8,
-      "endLine": 24,
-      "endCharacter": 17
-    }
-  },
-  {
-    "id": 75,
-    "type": "edge",
-    "label": "next",
-    "outV": 74,
-    "inV": 64
-  },
-  {
-    "id": 76,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 24,
-      "startCharacter": 21,
-      "endLine": 24,
-      "endCharacter": 30
-    }
-  },
-  {
-    "id": 77,
-    "type": "edge",
-    "label": "next",
-    "outV": 76,
-    "inV": 64
-  },
-  {
-    "id": 78,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 32,
-      "startCharacter": 23,
-      "endLine": 32,
-      "endCharacter": 32
-    }
-  },
-  {
-    "id": 79,
-    "type": "edge",
-    "label": "next",
-    "outV": 78,
-    "inV": 64
-  },
-  {
-    "id": 80,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 40,
-      "startCharacter": 25,
-      "endLine": 40,
-      "endCharacter": 34
-    }
-  },
-  {
-    "id": 81,
-    "type": "edge",
-    "label": "next",
-    "outV": 80,
-    "inV": 64
-  },
-  {
-    "id": 64,
-    "type": "vertex",
-    "label": "resultSet"
-  },
-  {
-    "id": 65,
-    "type": "vertex",
-    "label": "range",
-    "range": {
-      "startLine": 16,
-      "startCharacter": 11,
-      "endLine": 16,
-      "endCharacter": 20
-    }
-  },
-  {
-    "id": 66,
-    "type": "edge",
-    "label": "next",
-    "outV": 65,
-    "inV": 64
-  },
-  {
-    "id": 67,
-    "type": "vertex",
-    "label": "definitionResult"
-  },
-  {
-    "id": 68,
-    "type": "edge",
-    "label": "textDocument/definition",
-    "outV": 64,
-    "inV": 67
-  },
-  {
-    "id": 69,
-    "type": "edge",
-    "label": "item",
-    "outV": 67,
-    "inV": [
-      65
-    ],
-    "property": "definitions"
-  },
-  {
-    "id": 70,
-    "type": "vertex",
-    "label": "referenceResult"
-  },
-  {
-    "id": 82,
-    "type": "edge",
-    "label": "item",
-    "outV": 70,
-    "inV": [
-      72,
-      74,
-      76,
-      78,
-      80
-    ],
-    "property": "references"
-  },
-  {
-    "id": 71,
-    "type": "edge",
-    "label": "textDocument/definition",
-    "outV": 64,
-    "inV": 70
-  },
-  {
-    "id": 83,
-    "type": "edge",
-    "label": "contains",
-    "outV": 1,
-    "inVs": [
-      3,
-      18,
-      33,
-      46,
-      65
-    ]
-  }
+{"id":1,"type":"vertex","label":"metaData","version":"0.5.3","positionEncoding":"utf-16"}
+{"id":2,"type":"vertex","label":"project","kind":"vhdl","name":"vhdl-project"}
+{"id":3,"type":"vertex","label":"$event","kind":"begin","data":2,"scope":"document"}
+{"id":4,"type":"vertex","label":"document","languageId":"vhdl","uri":"file:///c:/Users/MANUEL~1/AppData/Local/Temp/tutorial/chiquito.vhd"}
+{"id":5,"type":"vertex","label":"$event","kind":"begin","data":4,"scope":"document"}
+{"id":6,"type":"edge","label":"contains","outV":2,"inVs":[4]}
+{"id":7,"type":"vertex","label":"resultSet"}
+{"id":8,"type":"vertex","label":"range","range":{"startLine":3,"startCharacter":7,"endLine":3,"endCharacter":18}}
+{"id":9,"type":"edge","label":"next","outV":8,"inV":7}
+{"id":10,"type":"vertex","label":"definitionResult"}
+{"id":11,"type":"edge","label":"textDocument/definition","outV":7,"inV":10}
+{"id":12,"type":"edge","label":"item","outV":10,"inVs":[8],"property":"definitions"}
+{"id":13,"type":"vertex","label":"referenceResult"}
+{"id":14,"type":"edge","label":"textDocument/references","outV":7,"inV":13}
+{"id":17,"type":"vertex","label":"range","range":{"startLine":3,"startCharacter":7,"endLine":3,"endCharacter":18}}
+{"id":18,"type":"edge","label":"next","outV":17,"inV":7}
+{"id":19,"type":"vertex","label":"range","range":{"startLine":11,"startCharacter":4,"endLine":11,"endCharacter":15}}
+{"id":20,"type":"edge","label":"next","outV":19,"inV":7}
+{"id":21,"type":"vertex","label":"range","range":{"startLine":13,"startCharacter":20,"endLine":13,"endCharacter":31}}
+{"id":22,"type":"edge","label":"next","outV":21,"inV":7}
+{"id":23,"type":"edge","label":"item","outV":13,"inVs":[17,19,21],"property":"references"}
+{"id":15,"type":"vertex","label":"$event","kind":"end","data":4,"scope":"document"}
+{"id":16,"type":"vertex","label":"$event","kind":"end","data":2,"scope":"project"}
+{"id":24,"type":"vertex","label":"resultSet"}
+{"id":25,"type":"vertex","label":"range","range":{"startLine":10,"startCharacter":9,"endLine":10,"endCharacter":18}}
+{"id":26,"type":"edge","label":"next","outV":25,"inV":24}
+{"id":27,"type":"vertex","label":"definitionResult"}
+{"id":28,"type":"edge","label":"textDocument/definition","outV":24,"inV":27}
+{"id":29,"type":"edge","label":"item","outV":27,"inVs":[25],"property":"definitions"}
+{"id":30,"type":"vertex","label":"referenceResult"}
+{"id":31,"type":"edge","label":"textDocument/references","outV":24,"inV":30}
+{"id":34,"type":"vertex","label":"range","range":{"startLine":10,"startCharacter":9,"endLine":10,"endCharacter":18}}
+{"id":35,"type":"edge","label":"next","outV":34,"inV":24}
+{"id":36,"type":"vertex","label":"range","range":{"startLine":32,"startCharacter":11,"endLine":32,"endCharacter":20}}
+{"id":37,"type":"edge","label":"next","outV":36,"inV":24}
+{"id":38,"type":"vertex","label":"range","range":{"startLine":34,"startCharacter":24,"endLine":34,"endCharacter":33}}
+{"id":39,"type":"edge","label":"next","outV":38,"inV":24}
+{"id":40,"type":"edge","label":"item","outV":30,"inVs":[34,36,38],"property":"references"}
+{"id":32,"type":"vertex","label":"$event","kind":"end","data":4,"scope":"document"}
+{"id":33,"type":"vertex","label":"$event","kind":"end","data":2,"scope":"project"}
+{"id":41,"type":"vertex","label":"resultSet"}
+{"id":42,"type":"vertex","label":"range","range":{"startLine":13,"startCharacter":13,"endLine":13,"endCharacter":16}}
+{"id":43,"type":"edge","label":"next","outV":42,"inV":41}
+{"id":44,"type":"vertex","label":"definitionResult"}
+{"id":45,"type":"edge","label":"textDocument/definition","outV":41,"inV":44}
+{"id":46,"type":"edge","label":"item","outV":44,"inVs":[42],"property":"definitions"}
+{"id":47,"type":"vertex","label":"referenceResult"}
+{"id":48,"type":"edge","label":"textDocument/references","outV":41,"inV":47}
+{"id":51,"type":"vertex","label":"range","range":{"startLine":13,"startCharacter":13,"endLine":13,"endCharacter":16}}
+{"id":52,"type":"edge","label":"next","outV":51,"inV":41}
+{"id":53,"type":"vertex","label":"range","range":{"startLine":44,"startCharacter":4,"endLine":44,"endCharacter":7}}
+{"id":54,"type":"edge","label":"next","outV":53,"inV":41}
+{"id":55,"type":"edge","label":"item","outV":47,"inVs":[51,53],"property":"references"}
+{"id":49,"type":"vertex","label":"$event","kind":"end","data":4,"scope":"document"}
+{"id":50,"type":"vertex","label":"$event","kind":"end","data":2,"scope":"project"}
+{"id":56,"type":"vertex","label":"resultSet"}
+{"id":57,"type":"vertex","label":"range","range":{"startLine":15,"startCharacter":11,"endLine":15,"endCharacter":18}}
+{"id":58,"type":"edge","label":"next","outV":57,"inV":56}
+{"id":59,"type":"vertex","label":"definitionResult"}
+{"id":60,"type":"edge","label":"textDocument/definition","outV":56,"inV":59}
+{"id":61,"type":"edge","label":"item","outV":59,"inVs":[57],"property":"definitions"}
+{"id":62,"type":"vertex","label":"referenceResult"}
+{"id":63,"type":"edge","label":"textDocument/references","outV":56,"inV":62}
+{"id":66,"type":"vertex","label":"range","range":{"startLine":15,"startCharacter":11,"endLine":15,"endCharacter":18}}
+{"id":67,"type":"edge","label":"next","outV":66,"inV":56}
+{"id":68,"type":"vertex","label":"range","range":{"startLine":23,"startCharacter":8,"endLine":23,"endCharacter":15}}
+{"id":69,"type":"edge","label":"next","outV":68,"inV":56}
+{"id":70,"type":"vertex","label":"range","range":{"startLine":23,"startCharacter":21,"endLine":23,"endCharacter":28}}
+{"id":71,"type":"edge","label":"next","outV":70,"inV":56}
+{"id":72,"type":"vertex","label":"range","range":{"startLine":34,"startCharacter":14,"endLine":34,"endCharacter":21}}
+{"id":73,"type":"edge","label":"next","outV":72,"inV":56}
+{"id":74,"type":"vertex","label":"range","range":{"startLine":40,"startCharacter":16,"endLine":40,"endCharacter":23}}
+{"id":75,"type":"edge","label":"next","outV":74,"inV":56}
+{"id":76,"type":"edge","label":"item","outV":62,"inVs":[66,68,70,72,74],"property":"references"}
+{"id":64,"type":"vertex","label":"$event","kind":"end","data":4,"scope":"document"}
+{"id":65,"type":"vertex","label":"$event","kind":"end","data":2,"scope":"project"}
+{"id":77,"type":"vertex","label":"resultSet"}
+{"id":78,"type":"vertex","label":"range","range":{"startLine":16,"startCharacter":11,"endLine":16,"endCharacter":20}}
+{"id":79,"type":"edge","label":"next","outV":78,"inV":77}
+{"id":80,"type":"vertex","label":"definitionResult"}
+{"id":81,"type":"edge","label":"textDocument/definition","outV":77,"inV":80}
+{"id":82,"type":"edge","label":"item","outV":80,"inVs":[78],"property":"definitions"}
+{"id":83,"type":"vertex","label":"referenceResult"}
+{"id":84,"type":"edge","label":"textDocument/references","outV":77,"inV":83}
+{"id":87,"type":"vertex","label":"range","range":{"startLine":16,"startCharacter":11,"endLine":16,"endCharacter":20}}
+{"id":88,"type":"edge","label":"next","outV":87,"inV":77}
+{"id":89,"type":"vertex","label":"range","range":{"startLine":24,"startCharacter":8,"endLine":24,"endCharacter":17}}
+{"id":90,"type":"edge","label":"next","outV":89,"inV":77}
+{"id":91,"type":"vertex","label":"range","range":{"startLine":24,"startCharacter":21,"endLine":24,"endCharacter":30}}
+{"id":92,"type":"edge","label":"next","outV":91,"inV":77}
+{"id":93,"type":"vertex","label":"range","range":{"startLine":32,"startCharacter":23,"endLine":32,"endCharacter":32}}
+{"id":94,"type":"edge","label":"next","outV":93,"inV":77}
+{"id":95,"type":"vertex","label":"range","range":{"startLine":40,"startCharacter":25,"endLine":40,"endCharacter":34}}
+{"id":96,"type":"edge","label":"next","outV":95,"inV":77}
+{"id":97,"type":"edge","label":"item","outV":83,"inVs":[87,89,91,93,95],"property":"references"}
+{"id":85,"type":"vertex","label":"$event","kind":"end","data":4,"scope":"document"}
+{"id":86,"type":"vertex","label":"$event","kind":"end","data":2,"scope":"project"}
+{"id":98,"type":"edge","label":"contains","outV":4,"inVs":[8,25,42,57,78]}
